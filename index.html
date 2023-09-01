@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> blur card </title>
+</head>
+<body>
+    <div class="alpha__block">
+        <div class="contaiener">
+            <div class="block">
+             <div class="img__block">
+                <img src="img/woo.jpg" alt="MY PHOTO">
+            </div>
+
+            <div class="text"> Hardin Mary </div>
+             <div class="subtext"> Los Angeles, UA, USA </div>
+             <div class="subtext__2">
+                User Interface Designer and Front-end Developer
+             </div>
+             <button class="btn__one">Message</button>
+             <button class="btn__two" id="btn__two">Following</button>
+            </div>
+        </div>
+    </div>
+
+    
+<script>
+
+    const btn = document.getElementById('btn__two');
+
+   btn.addEventListener('click', function handleClick() {
+
+     const initialText = 'Following';
+
+     const backgroundColor = btn.style.backgroundColor;
+
+     if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+
+    btn.innerHTML = '<div style="color: rgb(17, 17, 75);">Follow</div>';
+
+       btn.style.backgroundColor = 'rgba(255, 255, 255, 0.349)';
+
+   } else {
+
+       btn.style.backgroundColor = 'rgb(17, 17, 75)';
+
+       btn.textContent = initialText;
+
+   }
+
+
+  
+   });
+
+</script>
+
+
+
+
+
+</body>
+</html>

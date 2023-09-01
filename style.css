@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-image: url(img/geo-1.jpg);
+background-repeat: no-repeat ;
+background-size: cover;
+}
+
+.container{
+   max-width: 1200px;
+   height: 100%;
+   display: flex;
+   
+}
+
+
+.alpha__block{
+width: 100vw;
+height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block{       
+width: 265px;
+min-height: 200px;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 2px solid rgba(255, 255, 255, 0.521);
+border-radius: 15px;
+box-shadow: 0 8px 32px 0 rgba(143, 142, 142, 0.37);
+padding: 30px;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.705) ;
+}
+
+.img__block {
+ display: flex;
+justify-content: center;
+margin-top: 10px;
+
+}
+
+.text {
+    font-size: 19px;
+    font-weight: 800;
+    font-family: 'Mulish', sans-serif;
+    color: black; 
+    text-align: center;
+    margin: 22px 0px 15px 0px;
+}
+
+
+.subtext {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(49, 49, 49); 
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.subtext__2 {
+
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(49, 49, 49); 
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.btn__one {
+
+width: 90px;
+height: 40px;
+border-radius: 20px;
+border: 0;
+font-size: 13px;
+font-weight: 700;
+font-family: 'Mulish', sans-serif;
+color: rgb(38, 31, 82);
+margin-bottom: 15px;
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.349);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+text-align: center;
+transition: ease 0.2s all ;
+}
+
+.btn__two {
+
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    float: right;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255, 255, 255); 
+    background-color: rgb(17, 17, 75);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: ease 0.2s all;
+
+}
+
+.btn__two:hover{
+    background-color: rgb(38, 38, 150);
+    border-radius: 5px;
+
+}
+
+.btn__one:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 5px;
+} 
+
